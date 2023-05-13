@@ -1,0 +1,85 @@
+.circle-chart {
+    width: 150px;
+    height: 150px;
+}
+
+.circle-chart__circle {
+    stroke: #00acc1;
+    stroke-width: 2;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse;
+    /* 1 */
+    transform: rotate(-90deg);
+    /* 2, 3 */
+    transform-origin: center;
+    /* 4 */
+}
+
+.circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1, -1);
+    /* 1, 2, 3 */
+}
+
+.circle-chart__background {
+    stroke: #CCCDD0;
+    stroke-width: 2;
+    fill: none;
+    opacity: .3;
+}
+
+.circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+}
+
+.circle-chart__percent {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 5px;
+}
+
+.circle-chart__subline {
+    font-family: "Rubik-Regular";
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 3px;
+}
+
+.success-stroke {
+    stroke: #0074BD;
+}
+
+.warning-stroke {
+    stroke: #ffbb33;
+}
+
+.danger-stroke {
+    stroke: #F45959;
+}
+
+.circlechart.blue_circle .circle-chart__circle {
+    stroke: #0074BD;
+}
+
+.circlechart.red_circle .circle-chart__circle {
+    stroke: #F45959;
+}
+
+.circlechart.green_circle .circle-chart__circle {
+    stroke: #00AF70;
+}
+
+@keyframes circle-chart-fill {
+    to {
+        stroke-dasharray: 0 100;
+    }
+}
+
+@keyframes circle-chart-appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
