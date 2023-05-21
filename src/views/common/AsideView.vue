@@ -16,8 +16,9 @@
             <div class="menu">
                 <ul class="list-unstyled ps-0">
                     <li class="active">
-                        <a href="#"><font-awesome-icon icon="fa-solid fa-gauge-high" /> Dashboard
-                        </a>
+                        <RouterLink to="/dashboard">
+                            <font-awesome-icon icon="fa-solid fa-gauge-high" /> Dashboard
+                        </RouterLink>
                     </li>
                     <li class="sub-menu btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
                         <font-awesome-icon icon="fa-solid fa-users" />
@@ -27,7 +28,7 @@
                         <div class="collapse" id="home-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li>
-                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> <font-awesome-icon icon="fa-solid fa-users-viewfinder" /> Manage Tenants</a>
+                                    <RouterLink to="/tenants" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> <font-awesome-icon icon="fa-solid fa-users-viewfinder" /> Manage Tenants</RouterLink>
                                 </li>
                                 <li>
                                     <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><font-awesome-icon icon="fa-solid fa-file-invoice" /> Manage Bills</a>
@@ -37,9 +38,9 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <RouterLink to="/managers">
                             <font-awesome-icon icon="fa-solid fa-user" /> Managers
-                        </a>
+                        </RouterLink>
                     </li>
                     <li>
                         <RouterLink to="/login">
@@ -47,34 +48,34 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <RouterLink to="/transactions">
                             <font-awesome-icon icon="fa-solid fa-money-bill-transfer" /> Transactions 
-                        </a>
+                        </RouterLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <RouterLink to="/reports">
                             <font-awesome-icon icon="fa-solid fa-file-contract" /> Reports 
-                        </a>
+                        </RouterLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <RouterLink to="/documents">
                             <font-awesome-icon icon="fa-solid fa-folder-open" /> Documents 
-                        </a>
+                        </RouterLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <RouterLink to="/tasks">
                             <font-awesome-icon icon="fa-solid fa-list-check" />Tasks 
-                        </a>
+                        </RouterLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <RouterLink to="/settings">
                             <font-awesome-icon icon="fa-solid fa-gears" /> Settings 
-                        </a>
+                        </RouterLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <RouterLink to="/support">
                             <font-awesome-icon icon="fa-solid fa-headset" /> Support 
-                        </a>
+                        </RouterLink>
                     </li>
                 </ul>
             </div>

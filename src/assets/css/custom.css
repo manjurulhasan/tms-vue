@@ -112,6 +112,10 @@ body {
   overflow-x: hidden;
 }
 
+hr{
+
+}
+
 @media (max-width: 1000.98px) {
   .container {
     max-width: 100%;
@@ -1426,7 +1430,7 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.8);
   border-radius: 12px;
   padding: 24px;
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
 }
 .welcome{
   display:flex;
@@ -1620,14 +1624,7 @@ select.country {
   -webkit-appearance: none;
   background-position: 96% 55%;
 }
-.filter::before {
-  content: url(../images/filter_icon.png);
-  position: absolute;
-  left: 13px;
-  top: 15px;
-  font-size: 15px;
-  z-index: 1;
-}
+
 .filter .filter_select {
   width: 217px !important;
 }
@@ -2547,6 +2544,7 @@ select.country {
   min-height: 80px;
   padding: 0px 24px;
   border-bottom: 1px solid rgba(49, 147, 205, 0.3);
+  background-image: linear-gradient(to bottom right, #11ff0014, #00abff1a);
 }
 .wrapper .main_content header .header_left {
   display: flex;
@@ -2677,7 +2675,7 @@ select.country {
 .wrapper .main_content header .header_right .profile .dropdown .dropdown-menu.show {
   right: 15px;
   text-align: right;
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 0px 0px 12px 12px;
   box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.8);
 }
 .wrapper .main_content header .header_right .profile .dropdown .dropdown-menu .dropdown-item {
@@ -2699,6 +2697,10 @@ select.country {
 .wrapper .main_content header .header_right .profile .dropdown .dropdown-menu .dropdown-item svg {
   float: right;
 }
+
+.wrapper .main_content header .header_right .profile .dropdown .dropdown-menu .dropdown-item:hover {
+  background: #F4FBF6;
+}
 .wrapper .main_content .main_body {
   margin-left: 0px;
   margin-right: 0px;
@@ -2706,6 +2708,67 @@ select.country {
   padding: 0px 24px 30px 20px;
   background: #F5F5F5;
   min-height: 100vh;
+}
+.text-magento{
+  color:#2A93A7;
+}
+.total{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.icon{
+  width: 41.5px;
+  height: 36px;
+  border-radius: 25px;
+  position:relative;
+}
+.icon svg{
+  width: 21.6px;
+  height: 21.6px;
+  position: absolute;
+  top: 19%;
+  left: 20%;
+  right: 20%;
+}
+.income .icon {
+  background: #CEF7E3;
+}
+
+.income .icon svg{
+  color:#27AE60;
+}
+.expense .icon{
+  background: #FBDDDD;
+}
+.expense .icon svg{
+  color: #EB5757;
+}
+.total_text{
+  width:100%;
+  font-size:12px;
+}
+.task-list-summary{
+  display:flex;
+  height: 66px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding:16px;
+  margin-bottom:16px;
+  line-height:28px;
+}
+.task-name{
+  width:90%;
+  font-size:14px;
+}
+.task_counts {
+  font-size:24px;
+  font-weight:bold;
+}
+.transparent{
+  background: transparent;
 }
 
 @media (max-width: 1200px) {
@@ -2942,11 +3005,11 @@ select.country {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px 35px 0;
+  padding: 20px 0px 20px 0;
 }
 .top_part .left_part h2 {
   font-family: 'Open Sans';
-  font-size: 36px;
+  font-size: 32px;
   line-height: 48px;
   color: #100f2e;
 }
@@ -3822,11 +3885,11 @@ select.country {
 .dash_cost .pay_total .pay_box.blue_border::after {
   position: absolute;
   content: "";
-  height: 90px;
   width: 1px;
-  left: 90%;
+  right: 0;
   top:0;
-  background: #0074bd;
+  bottom:0;
+  background: #00af70;
 }
 .dash_cost .pay_total .pay_box .pay_details {
   margin-left: 50px;
