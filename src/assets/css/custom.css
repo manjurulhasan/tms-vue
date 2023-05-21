@@ -355,7 +355,7 @@ span.select2.select2-container.select2-container--default {
   height: 50px;
 }
 
-.form-control {
+.form-control input{
   font-family: "Rubik-Regular", sans-serif;
   background: #ffffff;
   border: 1px solid rgba(196, 203, 214, 0.5);
@@ -699,15 +699,15 @@ input[type=time] {
 .floating_field input,
 .floating_field textarea {
   font-family: "Rubik-Regular", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.1px;
   width: 100%;
   outline: 0;
-  color: #0a1436;
+  color: #181818;;
   background: transparent;
   padding: 12px 24px;
-  border: 1.5px solid rgba(145, 146, 158, 0.3);
+  border: 1px solid #40BF6A;
   box-shadow: 0px 6px 58px rgba(196, 203, 214, 0.103611);
   border-radius: 8px;
   height: 56px;
@@ -732,10 +732,10 @@ input[type=time] {
 }
 .floating_field label {
   font-family: "Rubik-Regular", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 19px;
   letter-spacing: 0.1px;
-  color: #91929e;
+  color: #349D57;
   position: absolute;
   top: -11px;
   left: 30px;
@@ -3375,13 +3375,44 @@ select.country {
 #salary_sheet .payslip_table .table thead th.emp_name {
   width: 25%;
 }
-#salary_sheet .payslip_table .table tbody td {
+.table-border{
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+}
+.table-border .table{
+  margin-bottom: 0rem;
+}
+.table-border .table tr:last-child td {
+  border-bottom: 0;
+}
+.table-border .table tr:last-of-type th:first-of-type {
+  border-top-left-radius: 12px;
+}
+
+.table-border .table tr:last-of-type th:last-of-type {
+  border-top-right-radius: 12px;
+}
+/* bottom */
+.table-border .table tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 12px;
+}
+
+.table-border .table tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 12px;
+}
+.table thead th {
+  font-size:13px;
+  padding: 15px;
+  background: #D6F0F5;
+  color:#181818;
+}
+.table tbody td {
   border-top: none;
   font-family: "Nunito-Regular", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   color: #0a1436;
-  padding: 29px 0px 10px 0px;
+  padding: 15px;
   width: 15%;
 }
 #salary_sheet .payslip_table .table tbody td.emp_id {
@@ -4246,8 +4277,6 @@ select.country {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  border-bottom: 1px solid rgba(145, 146, 158, 0.6);
-  margin: 0px -29px 28px -29px;
   padding-bottom: 36px;
 }
 .picture_up p {
@@ -4267,7 +4296,8 @@ select.country {
 
 .create_form h2 {
   font-family: "Rubik-Medium", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 26px;
   color: #0A1629;
   margin-bottom: 24px;
