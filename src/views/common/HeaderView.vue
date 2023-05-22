@@ -39,6 +39,7 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import router from '@/router';
     export default defineComponent({
         components:{
             
@@ -50,7 +51,7 @@ import { defineComponent } from 'vue';
         },
         methods: {
             Logout(){
-                this.$router.push('/login')
+                router.push('/login');
             }
         },
     })

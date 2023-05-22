@@ -27,7 +27,7 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-app.use(bootstrap)
+app.use(bootstrap as any)
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
