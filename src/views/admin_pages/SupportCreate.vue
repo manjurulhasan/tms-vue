@@ -3,14 +3,14 @@
         <div class="col-lg-12 col-md-12">
             <TopTitle>
                 <div class="left_part">
-                    <h2 class="arrow_icon icon_gap">Support</h2>
+                    <h2 class=" ">Support</h2>
                 </div>
             </TopTitle>
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="white_bg mt-0">
                         <div class="mb-3">
-                            <select class="form-select">
+                            <select class="form-select form-control">
                                 <option selected>Reason for Support</option>
                                 <option >Bug</option>
                             </select>

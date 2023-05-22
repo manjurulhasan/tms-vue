@@ -249,10 +249,21 @@ span.select2.select2-container.select2-container--default {
 }
 
 /*select2 ends*/
+.form-select{
+  height:52px;
+}
+.form-control{
+  border-radius: 8px;
+}
 .form-control:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #0074bd;
+  border-color: #40BF6A;
+}
+.form-select:focus{
+  outline: 0;
+  border-color: #40BF6A;
+  box-shadow: none;
 }
 
 .form-group {
@@ -399,7 +410,9 @@ label {
 .dropdown .dropdown-menu.dropdown_search.show {
   width: 100%;
 }
-
+.form-floating > .form-select {
+  padding-top: 0.625rem;
+}
 /*checkbox css starts*/
 .checkbox {
   display: inline;
@@ -1071,11 +1084,11 @@ input:-webkit-autofill {
   font-family: "Rubik-Medium", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: #100f2e;
+  color: #297A44;
   background: transparent;
 }
 .add_btn:hover {
-  color: #100f2e;
+  color: #297A44;
 }
 
 /*btn ends*/
@@ -1149,7 +1162,7 @@ button {
 }
 
 .btn_gap {
-  margin-right: 24px;
+  margin-right: 50px;
 }
 
 .white_clr {
@@ -1577,8 +1590,8 @@ select.country {
 }
 
 ::-webkit-scrollbar-track {
-  background: #c1c1c1;
-  border-radius: 10px;
+  background: #c1c1c100;
+  border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2132,6 +2145,19 @@ select.country {
   color: #0074bd;
   border-radius: 8px;
 }
+.folder-card{
+  background: #ffffff;
+  box-shadow: 2px 2px 1px 0px #dadadae3;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom:20px;
+}
+.folder-icon svg{
+  width:88px;
+  height:88px;
+  color:#78CDDD;
+}
 
 /*pagination css ends*/
 @media (max-width: 1550px) {
@@ -2544,7 +2570,7 @@ select.country {
   min-height: 80px;
   padding: 0px 24px;
   border-bottom: 1px solid rgba(49, 147, 205, 0.3);
-  background-image: linear-gradient(to bottom right, #11ff0014, #00abff1a);
+  /* background-image: linear-gradient(to bottom right, #11ff0014, #00abff1a); */
 }
 .wrapper .main_content header .header_left {
   display: flex;
@@ -2769,6 +2795,22 @@ select.country {
 }
 .transparent{
   background: transparent;
+}
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label{
+  transform: scale(0.85) translateY(-1.8rem) translateX(0.15rem);
+}
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label{
+  opacity: 1;
+  font-size: 15px;
+  color:#349D57;
+}
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .form-control-plaintext:focus, .form-floating > .form-control-plaintext:not(:placeholder-shown){
+  padding-top: 0.625rem;
+}
+.label-bg-white{
+  background: #fff;
+  padding: 0 5px;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -3452,6 +3494,9 @@ select.country {
 }
 @media (max-width: 1500px) {
   .payslip_table {
+    overflow-x: scroll;
+  }
+  .table-border {
     overflow-x: scroll;
   }
   .payslip_table .table {

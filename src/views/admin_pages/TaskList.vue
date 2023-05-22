@@ -15,7 +15,7 @@
                     </div>
                     </div>
                     <div class="right_btn">
-                        <RouterLink to="/managers/create" class="blue_btn sl_btn">
+                        <RouterLink to="/tasks/create" class="btn blue_btn btn-success">
                             <font-awesome-icon icon="fa-solid fa-plus" /> Create Task
                         </RouterLink>
                     </div>

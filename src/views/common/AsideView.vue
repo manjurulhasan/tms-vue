@@ -43,7 +43,7 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/login">
+                        <RouterLink to="/bill">
                             <font-awesome-icon icon="fa-solid fa-file-lines" /> Bill Management
                         </RouterLink>
                     </li>

@@ -3,7 +3,7 @@
         <div class="col-lg-12 col-md-12">
             <TopTitle>
                 <div class="left_part">
-                    <h2 class="">Transactions</h2>
+                    <h2 class="">Bill Management</h2>
                 </div>
                 <div class="right_part sl_right">
                     <div class="filter">
@@ -16,7 +16,7 @@
                     </div>
                     <div class="right_btn">
                         <RouterLink to="/bill/create" class="btn blue_btn btn-success">
-                            <font-awesome-icon icon="fa-solid fa-plus" /> Add Transaction
+                            <font-awesome-icon icon="fa-solid fa-plus" /> Add Bill
                         </RouterLink>
                     </div>
                 </div>
@@ -28,91 +28,98 @@
                             <table class="table table-striped table-hover">
                                 <thead>
                                     <tr>
-                                        <th class="w-20 ">Transaction</th>
+                                        <th class="w-10 ">Bill</th>
                                         <th class="w-10 ">Amount</th>
-                                        <th class="w-20 ">Property</th>
+                                        <th class="w-15 ">Property</th>
                                         <th class="w-10 ">Flat</th>
                                         <th class="w-10 ">Date</th>
+                                        <th class="w-15 ">Payment Status</th>
+                                        <th class="w-15 ">Receipt Status</th>
                                         <th class="w-5"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="w-20">Rent Revenue</td>
+                                        <td class="w-10">Gas</td>
                                         <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
+                                        <td class="w-15 ">Nam Village</td>
                                         <td class="w-10 ">B3</td>
                                         <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
                                         <td class="w-5 ">
                                             <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="w-20">Rent Revenue</td>
+                                        <td class="w-10">Gas</td>
                                         <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
+                                        <td class="w-15 ">Nam Village</td>
                                         <td class="w-10 ">B3</td>
                                         <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
                                         <td class="w-5 ">
                                             <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="w-20">Rent Revenue</td>
+                                        <td class="w-10">Gas</td>
                                         <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
+                                        <td class="w-15 ">Nam Village</td>
                                         <td class="w-10 ">B3</td>
                                         <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-5 ">
+                                            <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td class="w-10">Gas</td>
+                                        <td class="w-10 ">2000</td>
+                                        <td class="w-15 ">Nam Village</td>
+                                        <td class="w-10 ">B3</td>
+                                        <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
                                         <td class="w-5 ">
                                             <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="w-20">Rent Revenue</td>
+                                        <td class="w-10">Gas</td>
                                         <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
+                                        <td class="w-15 ">Nam Village</td>
                                         <td class="w-10 ">B3</td>
                                         <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
                                         <td class="w-5 ">
                                             <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="w-20">Rent Revenue</td>
+                                        <td class="w-10">Gas</td>
                                         <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
+                                        <td class="w-15 ">Nam Village</td>
                                         <td class="w-10 ">B3</td>
                                         <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
                                         <td class="w-5 ">
                                             <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="w-20">Rent Revenue</td>
+                                        <td class="w-10">Gas</td>
                                         <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
+                                        <td class="w-15 ">Nam Village</td>
                                         <td class="w-10 ">B3</td>
                                         <td class="w-10 ">Feb 2023</td>
-                                        <td class="w-5 ">
-                                            <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-20">Rent Revenue</td>
-                                        <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
-                                        <td class="w-10 ">B3</td>
-                                        <td class="w-10 ">Feb 2023</td>
-                                        <td class="w-5 ">
-                                            <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-20">Rent Revenue</td>
-                                        <td class="w-10 ">2000</td>
-                                        <td class="w-20 ">Nam Village</td>
-                                        <td class="w-10 ">B3</td>
-                                        <td class="w-10 ">Feb 2023</td>
+                                        <td class="w-15 "> Pending </td>
+                                        <td class="w-15 "> Pending </td>
                                         <td class="w-5 ">
                                             <button class="transparent"><font-awesome-icon icon="fa-solid fa-ellipsis-vertical" /></button>
                                         </td>

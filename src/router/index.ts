@@ -12,6 +12,8 @@ import SettingsView from '../views/admin_pages/SettingsView.vue'
 import DocumentsView from '../views/admin_pages/DocumentsView.vue'
 import ReportsView from '../views/admin_pages/ReportsView.vue'
 import TransactionView from '../views/admin_pages/TransactionView.vue'
+import BillManagement from '../views/admin_pages/BillManagement.vue'
+import BillCreate from '../views/admin_pages/BillCreate.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -95,6 +97,16 @@ const router = createRouter({
       path: '/transactions',
       name: 'Transactions',
       component: TransactionView
+    },
+    {
+      path: '/bill',
+      name: 'Bill Management',
+      component: BillManagement
+    },
+    {
+      path: '/bill/create',
+      name: 'Bill Create',
+      component: BillCreate
     }
   ]
 })
