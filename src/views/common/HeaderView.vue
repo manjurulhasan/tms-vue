@@ -1,7 +1,7 @@
 <template lang="">
     <header>
         <div class="header_left">
-            <div class="toggle" onclick="toggleMenu()">
+            <div class="toggle" @click="toggleMenu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.28307 19L20 19M19.9996 12L4 12M20 5L12.9719 5" stroke="#100F2E" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
@@ -52,6 +52,14 @@ import router from '@/router';
         methods: {
             Logout(){
                 router.push('/login');
+            },
+            toggleMenu() {
+                let toggle = document.querySelector('.toggle');
+                let sidebar = document.querySelector('.sidebar');
+                let main_content = document.querySelector('.main_content');
+                toggle.classList.toggle('active');
+                sidebar.classList.toggle('active');
+                main_content.classList.toggle('active');
             }
         },
     })
