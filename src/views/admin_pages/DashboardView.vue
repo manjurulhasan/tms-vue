@@ -60,16 +60,16 @@
                                 <div class="task-list-summary">
                                     <div class="task-name">New Task</div>
                                     <div clalss="task_counts">
-                                        <p class="text-primary">20</p>
+                                        <p class="text-primary bold">20</p>
                                     </div>
                                 </div>
                                 <div class="task-list-summary">
                                     <div class="task-name">In Progress</div>
-                                    <div clalss="task_counts"><p class="text-warning">30</p></div>
+                                    <div clalss="task_counts"><p class="text-warning bold">30</p></div>
                                 </div>
                                 <div class="task-list-summary">
                                     <div class="task-name">Finished</div>
-                                    <div clalss="task_counts"><p class="text-success">20</p></div>
+                                    <div clalss="task_counts"><p class="text-success bold">20</p></div>
                                 </div>
                             </div>
                                         
@@ -90,6 +90,8 @@ export default{
     },
 }
 </script>
-<style lang="">
-    
+<style scoped>
+    .bold{
+        font-weight: bold;
+    }
 </style>
